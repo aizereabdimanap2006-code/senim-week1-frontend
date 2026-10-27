@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #9e3546;
+  --color-secondary: #b76e79;
+  --color-accent: #e8b4bc;
+  --color-warm: #fbf6f0;
+  --color-ink: #483137;
+}
+
+:root { color-scheme: light; }
+body { margin: 0; background: #fbf6f0; color: #483137; font-family: Arial, Helvetica, sans-serif; }
+* { box-sizing: border-box; }
+::selection { background: #e8b4bc; color: #483137; }
