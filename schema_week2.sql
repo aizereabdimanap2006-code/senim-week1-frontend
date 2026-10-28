@@ -1,0 +1,21 @@
+-- Apply only to the isolated empty week 2 database.
+CREATE SCHEMA IF NOT EXISTS auth;
+DO $$ BEGIN IF NOT EXISTS(SELECT 1 FROM pg_roles WHERE rolname='authenticated') THEN CREATE ROLE authenticated NOLOGIN NOSUPERUSER NOBYPASSRLS; END IF; END $$;
+CREATE TABLE auth.users(id uuid PRIMARY KEY DEFAULT gen_random_uuid(),email text NOT NULL UNIQUE CHECK(email=lower(email)),password_hash text NOT NULL,raw_user_meta_data jsonb NOT NULL DEFAULT '{}',created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE auth.sessions(token_hash text PRIMARY KEY,user_id uuid NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,expires_at timestamptz NOT NULL,created_at timestamptz NOT NULL DEFAULT now());
+CREATE INDEX ON auth.sessions(user_id);CREATE INDEX ON auth.sessions(expires_at);
+CREATE TABLE auth.rate_limits(key text PRIMARY KEY,hits integer NOT NULL CHECK(hits>0),expires_at timestamptz NOT NULL);
+CREATE TABLE public.profiles(id uuid PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,email text NOT NULL UNIQUE,full_name text NOT NULL CHECK(length(trim(full_name)) BETWEEN 1 AND 100),role text NOT NULL DEFAULT 'student' CHECK(role IN ('student','psychologist','admin')),faculty_group text NOT NULL DEFAULT '' CHECK(length(faculty_group)<=100),created_at timestamptz NOT NULL DEFAULT now());
+CREATE FUNCTION auth.current_user_id() RETURNS uuid LANGUAGE sql STABLE AS $$ SELECT nullif(current_setting('app.user_id',true),'')::uuid $$;
+CREATE FUNCTION auth.create_student_profile() RETURNS trigger LANGUAGE plpgsql SECURITY DEFINER SET search_path=pg_catalog,public AS $$ BEGIN INSERT INTO public.profiles(id,email,full_name,role) VALUES(NEW.id,NEW.email,NEW.raw_user_meta_data->>'full_name','student');RETURN NEW; END $$;
+REVOKE ALL ON FUNCTION auth.create_student_profile() FROM PUBLIC;
+CREATE TRIGGER create_student_profile AFTER INSERT ON auth.users FOR EACH ROW EXECUTE FUNCTION auth.create_student_profile();
+ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.profiles FORCE ROW LEVEL SECURITY;
+CREATE POLICY own_profile_select ON public.profiles FOR SELECT TO authenticated USING(id=auth.current_user_id());
+CREATE POLICY own_profile_update ON public.profiles FOR UPDATE TO authenticated USING(id=auth.current_user_id()) WITH CHECK(id=auth.current_user_id());
+REVOKE ALL ON SCHEMA auth FROM PUBLIC;GRANT USAGE ON SCHEMA auth,public TO authenticated;
+REVOKE ALL ON public.profiles FROM PUBLIC,authenticated;
+GRANT SELECT ON public.profiles TO authenticated;
+GRANT UPDATE(full_name,faculty_group) ON public.profiles TO authenticated;
+REVOKE ALL ON FUNCTION auth.current_user_id() FROM PUBLIC;GRANT EXECUTE ON FUNCTION auth.current_user_id() TO authenticated;

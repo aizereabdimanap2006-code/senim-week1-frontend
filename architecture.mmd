@@ -1,0 +1,7 @@
+flowchart LR
+  B[Браузер] -->|HTTP| N[Next.js]
+  N -->|параметрленген SQL| P[(PostgreSQL)]
+  N --> G[requireRole]
+  G --> S[/dashboard]
+  G --> Y[/psychologist]
+  G --> A[/admin]

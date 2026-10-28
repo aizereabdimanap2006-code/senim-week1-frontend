@@ -1,0 +1,15 @@
+flowchart LR
+  B[Браузер] -->|HTTP| N[Next.js]
+  N -->|параметрленген SQL| P[(PostgreSQL)]
+  N --> G[requireRole]
+  G --> S[/dashboard]
+  G --> Y[/psychologist]
+  G --> A[/admin]
+
+erDiagram
+  AUTH_USERS ||--|| PROFILES : profile
+  AUTH_USERS ||--o{ AUTH_SESSIONS : sessions
+  AUTH_USERS { uuid id PK }
+  PROFILES { uuid id PK,FK string role }
+  AUTH_SESSIONS { string token_hash PK uuid user_id FK }
+  AUTH_RATE_LIMITS { string key PK integer hits }

@@ -1,0 +1,568 @@
+{
+  "snapshot": "SENIM week 2 PostgreSQL",
+  "date": "2026-10-28",
+  "checks": {
+    "unit": 11,
+    "integration": 45,
+    "build": "passed",
+    "browser_profiles": "passed",
+    "staff_route_checks": 20
+  },
+  "files": [
+    {
+      "path": "02_diagrams/architecture.mmd",
+      "bytes": 207,
+      "sha256": "6ccade0f7433df0116f1cc6ea69ec10de4b9a9fa36bbcdc3d05029689263d8b4"
+    },
+    {
+      "path": "02_diagrams/architecture.png",
+      "bytes": 60098,
+      "sha256": "500ed0b02a02ba5bf69c7473b96e9527ae0abb3e619b08823bad408cdc93609a"
+    },
+    {
+      "path": "02_diagrams/auth-flow.png",
+      "bytes": 56453,
+      "sha256": "d42302b7a1a87cdc4e3d71021cc095d82ef8e601fcd47bcc4770aeb476187a9e"
+    },
+    {
+      "path": "02_diagrams/er.mmd",
+      "bytes": 277,
+      "sha256": "5c20c76ea3cfda614bf4a53ec6a6a95ca76e0a0d8753932691848f8e342c7504"
+    },
+    {
+      "path": "02_diagrams/er.png",
+      "bytes": 60691,
+      "sha256": "67a47438487b974fd7825798a68c21347eabe194eac5c7cb9ed53b3ca5154193"
+    },
+    {
+      "path": "03_database/README.md",
+      "bytes": 715,
+      "sha256": "d3864794cf1504574ff290e05dbf71bac843f71cc7d41936edb28b8b0be08b1c"
+    },
+    {
+      "path": "03_database/schema_week2.sql",
+      "bytes": 2691,
+      "sha256": "7a31a8c33e6337010a66a17cf3f59cf6be8dd0e7c129fbdc07b41eccc4503417"
+    },
+    {
+      "path": "06_code/.env.example",
+      "bytes": 127,
+      "sha256": "d95da85ac8a350644c7053e337acbf9272f6ec65b6a9dd7b93bb1970ee149d69"
+    },
+    {
+      "path": "06_code/.gitignore",
+      "bytes": 79,
+      "sha256": "59d5b5acf9d86572fdf9b04bba1efb1293d4b3c0a9c76d8c9806d899a5db0fca"
+    },
+    {
+      "path": "06_code/app/(student)/[section]/page.tsx",
+      "bytes": 832,
+      "sha256": "2a354ce47fa2c649331b1e432b83eccda894b61e5d1defe6e60bc13518286392"
+    },
+    {
+      "path": "06_code/app/(student)/ai/history/page.tsx",
+      "bytes": 3853,
+      "sha256": "433aad299fde68141de08aebf775559e7b0ce3dada8608584dbb3b360d898c86"
+    },
+    {
+      "path": "06_code/app/(student)/ai/page.tsx",
+      "bytes": 1438,
+      "sha256": "bf39ae5831ca13ad2ec8d766c720a9ea52e0f37725fd5a40e8b5f46b88ccca6e"
+    },
+    {
+      "path": "06_code/app/(student)/appointments/page.tsx",
+      "bytes": 414,
+      "sha256": "a44b67f8cc0ae6d6d72a246320550383347d88b75efb956ccbc7743b5f2385c0"
+    },
+    {
+      "path": "06_code/app/(student)/dashboard/page.tsx",
+      "bytes": 6059,
+      "sha256": "6b1300cb282f9dc1916ce8bff0120f15922280db077dd93c8c631c2969ad4329"
+    },
+    {
+      "path": "06_code/app/(student)/layout.tsx",
+      "bytes": 1955,
+      "sha256": "38581c2d896d25f51913b9e30235f04bce439e10a96a7fbaa3054eed1c147643"
+    },
+    {
+      "path": "06_code/app/(student)/mood/page.tsx",
+      "bytes": 4356,
+      "sha256": "91828b5627319f95a9e9ecaf0c7d1f5849b4002100843132f51cf3ce3710ea42"
+    },
+    {
+      "path": "06_code/app/(student)/notifications/page.tsx",
+      "bytes": 3592,
+      "sha256": "4e7f510e6352c5e8a3ebe6d82c9dc390d89c7a36a06b47109ebf3e6b8db6eee4"
+    },
+    {
+      "path": "06_code/app/(student)/profile/actions.ts",
+      "bytes": 661,
+      "sha256": "1f702102e25eb211d8ae4ebdb1d74ec9835d7cf674f93623ac291d18e6d8ecab"
+    },
+    {
+      "path": "06_code/app/(student)/profile/page.tsx",
+      "bytes": 2068,
+      "sha256": "50f8ab8e6ec8f4f3f6a389ff49d296157ad9b4bbab31dc8fa403ddef8ebdc8ed"
+    },
+    {
+      "path": "06_code/app/admin/layout.tsx",
+      "bytes": 403,
+      "sha256": "543c10e68e4802b38037f50a3be5ba1d91a0616a59b287e2f307266a005fcec2"
+    },
+    {
+      "path": "06_code/app/admin/materials/page.tsx",
+      "bytes": 223,
+      "sha256": "a7c035124eb5463b292263de99cc80438395eefb027cc0da2f9ae992b19deaa8"
+    },
+    {
+      "path": "06_code/app/admin/page.tsx",
+      "bytes": 224,
+      "sha256": "50bd3f5a395645cb9888cf5ef708cf1a45a11d65e1867be68a9702ca7f88f0d3"
+    },
+    {
+      "path": "06_code/app/admin/profile/page.tsx",
+      "bytes": 397,
+      "sha256": "c9ac718466cfb130d0017f56e5b22658208244b1b0b1f3505d414481dfaedab0"
+    },
+    {
+      "path": "06_code/app/admin/users/page.tsx",
+      "bytes": 179,
+      "sha256": "c9b3675e9b15c686dc6a71d61048a04a547a8d499a9b6b95d8ab21960b09730f"
+    },
+    {
+      "path": "06_code/app/api/auth/route.ts",
+      "bytes": 3633,
+      "sha256": "eb653124f10f0b5055c92e472cf6e5e0890ce0db69e8bb55bccfbb455a63cf4c"
+    },
+    {
+      "path": "06_code/app/auth/signout/route.ts",
+      "bytes": 367,
+      "sha256": "a3185d527fbbdb859c5a94e16c367dcf756cded0866d62ea2aafaad8a7bab48d"
+    },
+    {
+      "path": "06_code/app/error.tsx",
+      "bytes": 627,
+      "sha256": "cd6ec90517d58f7549feda6b5c9b41fbf4e862366484c3344ee022eaa8bcdf4b"
+    },
+    {
+      "path": "06_code/app/globals.css",
+      "bytes": 6550,
+      "sha256": "8716137ecf2d700d6a0823d8b5c602fdbf5522d7c0f7b27cae5168f461a756dd"
+    },
+    {
+      "path": "06_code/app/layout.tsx",
+      "bytes": 325,
+      "sha256": "fe262b26c3d82db12bdda33bfc08e566f5401ca64e3432bf1ff488df8d398f3e"
+    },
+    {
+      "path": "06_code/app/login/page.tsx",
+      "bytes": 114,
+      "sha256": "037d506eec395f4d0ce08affdd59403b0d3567d6d73ce9f0483672b8f2f1fe7b"
+    },
+    {
+      "path": "06_code/app/page.tsx",
+      "bytes": 180,
+      "sha256": "9015513ea7742692f0714b7c388c4c4fbc6dd0d77bb3d08df9ded9c5cce882d0"
+    },
+    {
+      "path": "06_code/app/psychologist/appointments/page.tsx",
+      "bytes": 266,
+      "sha256": "1fddcc1c50941044ae2dcbfef921a9f173078da76f6bd632deeca196af09515c"
+    },
+    {
+      "path": "06_code/app/psychologist/articles/page.tsx",
+      "bytes": 238,
+      "sha256": "246e57e24ecc4cc8e0968487946b3e31170c56a1cd3098c78b87ab8ecd2e008d"
+    },
+    {
+      "path": "06_code/app/psychologist/layout.tsx",
+      "bytes": 417,
+      "sha256": "e8dddafbcb5cebbd2a8e5d2b3c3ffc89be8c08421336fb6a6d8edf6a4b3040ba"
+    },
+    {
+      "path": "06_code/app/psychologist/page.tsx",
+      "bytes": 238,
+      "sha256": "b55b48df87477f208e799cd4894130195d154d5a0f936fc985860b308979643a"
+    },
+    {
+      "path": "06_code/app/psychologist/profile/page.tsx",
+      "bytes": 404,
+      "sha256": "c377c821799d3e569a1f35e1fa5ba302c1f535abe30721b99e5fa3103f8d7f6f"
+    },
+    {
+      "path": "06_code/app/psychologist/schedule/page.tsx",
+      "bytes": 254,
+      "sha256": "0db0417ddc2dbb55c26ef6d1ea6aadb9f616dd00fac72f292e319cb63d36d6e0"
+    },
+    {
+      "path": "06_code/app/register/page.tsx",
+      "bytes": 117,
+      "sha256": "8c9ec3138a49946030ef2b681c04545d1e352cc90c77c1ac941991356a12b1e6"
+    },
+    {
+      "path": "06_code/components/AccountHeader.tsx",
+      "bytes": 1247,
+      "sha256": "b21402701692f6eb91730677c99884aa70656712d21cbc1c9e6b89d0ce7f90ce"
+    },
+    {
+      "path": "06_code/components/AuthForm.tsx",
+      "bytes": 6155,
+      "sha256": "54c95c7ed5fc7f4f8057ce44a260e3083d43ffbbd57dabcc64ee45a411fe2387"
+    },
+    {
+      "path": "06_code/components/BottomNav.tsx",
+      "bytes": 2634,
+      "sha256": "f650c37ada21be44c532a653a4b8c16bb2768dc14f2bd66c3b9fe3cdb187883b"
+    },
+    {
+      "path": "06_code/components/Brand.tsx",
+      "bytes": 303,
+      "sha256": "49deceb9e084a642d066b66ee06b41ac7482121877dd98ccf2a42c5a4b21ea1f"
+    },
+    {
+      "path": "06_code/components/FilterLink.tsx",
+      "bytes": 50,
+      "sha256": "106be83a4c0a6635ea41e7c69e8fbc76d6c46c9cf137973530ddf38f7fc13472"
+    },
+    {
+      "path": "06_code/components/mood/MoodCalendar.tsx",
+      "bytes": 5554,
+      "sha256": "7fa65ec5b0ddf29b5f9aabc6c326d97d068af850b2b8fb6cfc7b2d73843a629c"
+    },
+    {
+      "path": "06_code/components/preview/AppointmentCard.tsx",
+      "bytes": 6346,
+      "sha256": "5f1bf040b05d183a204b182bec6d3205921e8055b14cd7e65ac11d3408ade93c"
+    },
+    {
+      "path": "06_code/components/preview/ChatPreview.tsx",
+      "bytes": 4834,
+      "sha256": "5d3195927691c77633800d6e65d6c6179694f8e0b42c57a4ea0609c50aee426f"
+    },
+    {
+      "path": "06_code/components/preview/MoodCharts.tsx",
+      "bytes": 1275,
+      "sha256": "68c87015d88b1e8f0f1530a740f5c1883ffc750278ca3971dc87d03f42e20745"
+    },
+    {
+      "path": "06_code/components/preview/MoodPicker.tsx",
+      "bytes": 3576,
+      "sha256": "8ff1466f3bf8a222653ba27f7ced9bae4a5a7d243c05e8d9d9d3eb3d4690debc"
+    },
+    {
+      "path": "06_code/components/preview/PreviewFrame.tsx",
+      "bytes": 458,
+      "sha256": "4edbcc5d45c608ea094b5611ce3687e1892847123c3926eccf57a4c1bc0f46a8"
+    },
+    {
+      "path": "06_code/components/ProfileEditor.tsx",
+      "bytes": 1680,
+      "sha256": "9c9e4a828b9612cfec30cc301cba0bd752ed8b8b215194bceb2e7b335258e00f"
+    },
+    {
+      "path": "06_code/components/staff/Appointments.tsx",
+      "bytes": 6149,
+      "sha256": "93e7f18df3d2718d5d41cfd87da27e209cca293413b477f0b1226f19c4290673"
+    },
+    {
+      "path": "06_code/components/staff/Articles.tsx",
+      "bytes": 8765,
+      "sha256": "baffb0f590a42b9e5c3bdc4fdd2c440c3d4087e37a0f7fcb8d635eff81835c1b"
+    },
+    {
+      "path": "06_code/components/staff/Schedule.tsx",
+      "bytes": 5964,
+      "sha256": "89d3423cc6af56b8c3146092cc92e7477dd3c88308dff6fe7f3cb1e67c947a95"
+    },
+    {
+      "path": "06_code/components/staff/Users.tsx",
+      "bytes": 2364,
+      "sha256": "009dab74c5f1e7ea79c0b83f08df662987b498e3041bd6ca69a6fbe65b3e0a7c"
+    },
+    {
+      "path": "06_code/components/StaffDashboard.tsx",
+      "bytes": 1547,
+      "sha256": "c0fb1e6ea8335851a853cbcc6dcc1588ba34d5c5573173ad73e6d981fe1ffec7"
+    },
+    {
+      "path": "06_code/components/StaffNav.tsx",
+      "bytes": 1943,
+      "sha256": "252c111768e4b56d8f2e33ef066d4777a8f99dd614f805750aada9589206d23a"
+    },
+    {
+      "path": "06_code/db/migrations/001_week2.sql",
+      "bytes": 2691,
+      "sha256": "7a31a8c33e6337010a66a17cf3f59cf6be8dd0e7c129fbdc07b41eccc4503417"
+    },
+    {
+      "path": "06_code/docs/STAFF_DESIGN.md",
+      "bytes": 1981,
+      "sha256": "c1701c01ed536c80b27326412694e6bfa1d8a2e4415893b8fd0d2545aef36af9"
+    },
+    {
+      "path": "06_code/lib/auth-feedback.ts",
+      "bytes": 910,
+      "sha256": "69fae7a640cd09c248ce2c1cd12fab0a8430a0131d7fc9017b0d32081a869b90"
+    },
+    {
+      "path": "06_code/lib/auth-validation.ts",
+      "bytes": 1281,
+      "sha256": "2ec7b0c49581399aa54b1decdf3109c350753f8e2c826b93445e2c87d17991f9"
+    },
+    {
+      "path": "06_code/lib/auth.ts",
+      "bytes": 1137,
+      "sha256": "baaa05cea29c2d08fe2a50e4faa02cd6973125d8df2857e8174c4f1fa86dddb1"
+    },
+    {
+      "path": "06_code/lib/dates.ts",
+      "bytes": 2099,
+      "sha256": "8f5e4e914b691911d3b8380725c3b6fd49f3241f3f6b30c611c4cbd169ac0a69"
+    },
+    {
+      "path": "06_code/lib/db/pool.ts",
+      "bytes": 1248,
+      "sha256": "4c60110d5835a9fa87388e88ba985f155bb37623f22771b7346774a8b77688c5"
+    },
+    {
+      "path": "06_code/lib/db/session.ts",
+      "bytes": 953,
+      "sha256": "07f76088b86dbc2f082ecf9078b090f610382639e8e4e23833b282bdd652efbe"
+    },
+    {
+      "path": "06_code/lib/format.ts",
+      "bytes": 1801,
+      "sha256": "ba485a0ea734f834a88f1c3433ccd66319b4116a1d7bdf5c39416a8d2d6a1bdb"
+    },
+    {
+      "path": "06_code/lib/i18n/index.ts",
+      "bytes": 94,
+      "sha256": "a7871ff85ef224b17a128a4e51ac6b6e30dd1f417c13ab858e54255233705d04"
+    },
+    {
+      "path": "06_code/lib/i18n/kk.ts",
+      "bytes": 12927,
+      "sha256": "8dc3ade65a8232c36c72c600ce3976f8836f3e14dd34f44a215cadd79989e6df"
+    },
+    {
+      "path": "06_code/lib/mood.ts",
+      "bytes": 1487,
+      "sha256": "ffedb10816538ac78734b3e65eba06346396112aa0633852058d54ad1ede70cc"
+    },
+    {
+      "path": "06_code/lib/profile-actions.ts",
+      "bytes": 645,
+      "sha256": "2f0ab8ae0cb597c1b1d9dfdf34fda0033606768edc98b93db3424cff90a0ef4d"
+    },
+    {
+      "path": "06_code/lib/security/origin.ts",
+      "bytes": 386,
+      "sha256": "f6a2a4e4bc43ec95d2dc8f554ea1d4c63f5749a98cf8bb910f2883c129ff266e"
+    },
+    {
+      "path": "06_code/lib/security/password.ts",
+      "bytes": 927,
+      "sha256": "0c7afbb8063bfd1cde26c2f0dd6868e77d5fa9d9505d0f622517658a3e8c6238"
+    },
+    {
+      "path": "06_code/next-env.d.ts",
+      "bytes": 268,
+      "sha256": "f4e8976c19fc926644d72610bf1058bd6bf52add97e46a02bc0b912a751625c0"
+    },
+    {
+      "path": "06_code/next.config.mjs",
+      "bytes": 737,
+      "sha256": "d74a7298f911d031662d157d3663b2bb5ec4e785b979bcffeff876a9b6416235"
+    },
+    {
+      "path": "06_code/package-lock.json",
+      "bytes": 71443,
+      "sha256": "87abf33953d22a149978692e7480065c17bd4dd4711d8ea1bb5eb686cea7f82c"
+    },
+    {
+      "path": "06_code/package.json",
+      "bytes": 1431,
+      "sha256": "ef99bf00c466f1f62e066edde1f35420dfba95a878f54e0b6224fe80f1cc69c5"
+    },
+    {
+      "path": "06_code/postcss.config.js",
+      "bytes": 62,
+      "sha256": "27647d47033ea345f68ed36cf5e822df6219cd6c75e75b67d346a86798bf1c6a"
+    },
+    {
+      "path": "06_code/README.md",
+      "bytes": 9201,
+      "sha256": "3ec98dbd672f314b159e6969de0ee9443121e28288037c0e4d5a77ca92dd41b9"
+    },
+    {
+      "path": "06_code/scripts/configure-runtime.mjs",
+      "bytes": 1598,
+      "sha256": "e8dffe0c117846f5c81376cb57a8a8c6d9d7db069c52a7d82da17c52ddd7f5c4"
+    },
+    {
+      "path": "06_code/scripts/local-app.mjs",
+      "bytes": 5312,
+      "sha256": "9143a0d9b6b98053d5f585510dfcfda254731ab2e418a2b03c0e2250ea2fe0d6"
+    },
+    {
+      "path": "06_code/scripts/local-postgres.mjs",
+      "bytes": 4157,
+      "sha256": "741e923aa2f522ddccdb8f652fe2fa06dc64b444625f4074eb895125d6b6cd56"
+    },
+    {
+      "path": "06_code/scripts/migrate.mjs",
+      "bytes": 1801,
+      "sha256": "739b3891784b4dfccd4123c5cda234efb136d1166a1c71a8a779c1bc5d729e35"
+    },
+    {
+      "path": "06_code/scripts/seed-demo.mjs",
+      "bytes": 1176,
+      "sha256": "9ff7b7f51a22d6c3a3ff2b967626f670fc5dd6eab8624d660049b2c4e8a62a6b"
+    },
+    {
+      "path": "06_code/scripts/set-role.mjs",
+      "bytes": 635,
+      "sha256": "e93cedc7b284282d35cf93e6d78ca04fbdc78de5dac73d4e8ef15994e42bf108"
+    },
+    {
+      "path": "06_code/scripts/setup-local.mjs",
+      "bytes": 928,
+      "sha256": "55c24e9576939e5c6bc4f1e85b09c986c4357d59145eda232afbab846cb62c1f"
+    },
+    {
+      "path": "06_code/START-SENIM.cmd",
+      "bytes": 61,
+      "sha256": "d2722d9ea0b14900f016203c92e2a52022206e844a8efa9eb5ca2be0283381bc"
+    },
+    {
+      "path": "06_code/tailwind.config.ts",
+      "bytes": 525,
+      "sha256": "064d1845b63bdcd32f69fad6295126a3be84c8fbf07959fae5c24d46b610bf78"
+    },
+    {
+      "path": "06_code/tests/integration.mjs",
+      "bytes": 8783,
+      "sha256": "1282dd24d813c9ee0dbe80fa1bedd5652b283064e5017d97b31e3bed62f5b26e"
+    },
+    {
+      "path": "06_code/tests/unit.mjs",
+      "bytes": 2152,
+      "sha256": "e94b4bb1b4979821d2b792b12500991a7351b7bae0f8bbadcd21ca6cb902a99b"
+    },
+    {
+      "path": "06_code/tsconfig.json",
+      "bytes": 689,
+      "sha256": "348023e588cb532545fca96e927a3be5a2d2653a70168c739d4bd5407d61063f"
+    },
+    {
+      "path": "07_defense/demo_checklist.md",
+      "bytes": 1535,
+      "sha256": "2d8e1c0a9bdffca2b50b1fc63226866fff75f20b382f0456af69b92d84db1d52"
+    },
+    {
+      "path": "07_defense/staff-design-checks.json",
+      "bytes": 73,
+      "sha256": "c857de33a019889ad85759d8a33924118e72f3d3804b39f4742d90232b87a0ad"
+    },
+    {
+      "path": "07_defense/ТЕКСЕРУ_НӘТИЖЕСІ.md",
+      "bytes": 2262,
+      "sha256": "b32663ec82ae851aab89380474c9245d548bbb87d164a1bedbea0ec8ad126bdd"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1355,
+      "sha256": "01264345daec4a7c0dfac0e0ad39ccfdca0f0857c286796b4369cf2bf01106e8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 246,
+      "sha256": "a50b4b11430eaba503b74e64c00a1965415ddcc1a84e0e07c7d3799cba96e66f"
+    },
+    {
+      "path": "screenshots/01-login.png",
+      "bytes": 57405,
+      "sha256": "c0c30e5d0576d642dd5e200483f4e4f81ad3590292e8836c4281001c95142656"
+    },
+    {
+      "path": "screenshots/02-register.png",
+      "bytes": 54746,
+      "sha256": "f30688d353af7d3f2cd974436c45eeca1ef09178f5ed5d3d9ca450774e360cf4"
+    },
+    {
+      "path": "screenshots/03-dashboard.png",
+      "bytes": 70662,
+      "sha256": "f1fa3f9c73eac25837fb9ce189e82449288ad356067c48b59bfa07a560f97e57"
+    },
+    {
+      "path": "screenshots/04-profile.png",
+      "bytes": 59282,
+      "sha256": "0f1cc54fd8b69c4bcf024e4450b2c150fa47819e6928cebc620c2426480b85fa"
+    },
+    {
+      "path": "screenshots/05-psychologist.png",
+      "bytes": 32438,
+      "sha256": "e426f6bc6e0daa056f16cbbeb1a91012ee36070cbf501eda1aba6619b70bab59"
+    },
+    {
+      "path": "screenshots/06-admin.png",
+      "bytes": 29292,
+      "sha256": "967ca9f649aa815293cee36fc7c698960f999609cb2283d637e48bbdd0b40ad1"
+    },
+    {
+      "path": "screenshots/07-psychologist-profile.png",
+      "bytes": 33038,
+      "sha256": "7c6b7690835f23fe3d6ccec4a1cec7f10a83099390d3ef1b67afc69d1dee1f84"
+    },
+    {
+      "path": "screenshots/08-admin-profile.png",
+      "bytes": 30226,
+      "sha256": "8cc774ffe7280d6c2d4a2d3fde37c8f3722aae0ad1ccc28efc9415537bb2b427"
+    },
+    {
+      "path": "screenshots/09-mood-preview.png",
+      "bytes": 56220,
+      "sha256": "062fffdedc2b52bfd772ae5fe86ab4d6b11f7c267bacb191acc0a50261e4bd5c"
+    },
+    {
+      "path": "screenshots/10-articles.png",
+      "bytes": 50716,
+      "sha256": "f44d8ee4c64097ee7b5dc120dec27ba85df6ac03cab3f017d6c3d5bb74a251f8"
+    },
+    {
+      "path": "screenshots/11-schedule.png",
+      "bytes": 55432,
+      "sha256": "e1f0c3a35fab0ea6a61673baf669f9bb96d9245b32f13b239addd546c261043a"
+    },
+    {
+      "path": "screenshots/12-appointments.png",
+      "bytes": 48660,
+      "sha256": "05ae1640c60101be9fde11d17b45a6f96af307a21c8bd75a4b03a75f26c7e2f8"
+    },
+    {
+      "path": "screenshots/13-article-editor.png",
+      "bytes": 47582,
+      "sha256": "dadca6793492b10b94bae140284ecb19cc81a523de7312cd3f7d4ac2d53c4aee"
+    },
+    {
+      "path": "screenshots/14-admin-materials.png",
+      "bytes": 48112,
+      "sha256": "d4e152ba5214d93caf2d55d650a0c0f3d1331ad3348d38d0f7f225ef2d863c1a"
+    },
+    {
+      "path": "screenshots/15-admin-users.png",
+      "bytes": 39529,
+      "sha256": "4ccd5d95eebd311025c179076301b8447701566e41edb18bea00acfbfb82ae60"
+    },
+    {
+      "path": "week2_report.docx",
+      "bytes": 1575376,
+      "sha256": "6d767ac3389a515fb15304e0170974b03801b94141c83b7a924b5c9bc127431a"
+    },
+    {
+      "path": "КОД_ҚҰРЫЛЫМЫ.md",
+      "bytes": 2528,
+      "sha256": "76656eec79afdb5cb0f2da683baa3e5799ad54045925e59933a29a39d86223a7"
+    }
+  ]
+}

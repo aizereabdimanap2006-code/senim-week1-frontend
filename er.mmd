@@ -1,0 +1,7 @@
+erDiagram
+  AUTH_USERS ||--|| PROFILES : profile
+  AUTH_USERS ||--o{ AUTH_SESSIONS : sessions
+  AUTH_USERS { uuid id PK }
+  PROFILES { uuid id PK,FK string role }
+  AUTH_SESSIONS { string token_hash PK uuid user_id FK }
+  AUTH_RATE_LIMITS { string key PK integer hits }

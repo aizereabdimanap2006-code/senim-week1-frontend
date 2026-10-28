@@ -1,11 +1,7 @@
 node_modules/
 .next/
-out/
-dist/
-.env*
-!.env.example
+.next-dev/
+.local/
+.env.local
 *.tsbuildinfo
-*.log
-.DS_Store
-Thumbs.db
-.vercel/
+next-env.d.ts

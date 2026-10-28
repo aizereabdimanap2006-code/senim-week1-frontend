@@ -1,0 +1,48 @@
+2026-10-27 09:54:12.700 +05 [4444] LOG:  starting PostgreSQL 17.10 on x86_64-windows, compiled by msvc-19.44.35226, 64-bit
+2026-10-27 09:54:12.702 +05 [4444] LOG:  listening on IPv4 address "127.0.0.1", port 5434
+2026-10-27 09:54:12.865 +05 [10968] LOG:  database system was shut down at 2026-10-27 09:54:04 +05
+2026-10-27 09:54:12.954 +05 [4444] LOG:  database system is ready to accept connections
+2026-10-27 09:56:29.107 +05 [23952] ERROR:  permission denied for table profiles
+2026-10-27 09:56:29.107 +05 [23952] STATEMENT:  UPDATE profiles SET role='admin' WHERE id=$1
+2026-10-27 09:59:12.860 +05 [3988] LOG:  checkpoint starting: time
+2026-10-27 10:01:04.914 +05 [3988] LOG:  checkpoint complete: wrote 1022 buffers (6.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=111.689 s, sync=0.344 s, total=112.055 s; sync files=338, longest=0.007 s, average=0.002 s; distance=4692 kB, estimate=4692 kB; lsn=0/1A08190, redo lsn=0/1A08100
+2026-10-27 15:52:32.358 +05 [20152] ERROR:  permission denied for table profiles
+2026-10-27 15:52:32.358 +05 [20152] STATEMENT:  UPDATE profiles SET role='admin' WHERE id=$1
+2026-10-27 15:52:54.652 +05 [7212] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-27 15:53:02.173 +05 [3988] LOG:  checkpoint starting: time
+2026-10-27 15:53:04.227 +05 [3988] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.893 s, sync=0.034 s, total=2.060 s; sync files=17, longest=0.005 s, average=0.002 s; distance=31 kB, estimate=4226 kB; lsn=0/1A0FE10, redo lsn=0/1A0FDB8
+2026-10-27 15:54:38.302 +05 [23772] ERROR:  permission denied for table profiles
+2026-10-27 15:54:38.302 +05 [23772] STATEMENT:  UPDATE profiles SET role='admin' WHERE id=$1
+2026-10-27 15:58:02.232 +05 [3988] LOG:  checkpoint starting: time
+2026-10-27 15:58:03.721 +05 [3988] LOG:  checkpoint complete: wrote 14 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.448 s, sync=0.020 s, total=1.491 s; sync files=14, longest=0.004 s, average=0.002 s; distance=32 kB, estimate=3807 kB; lsn=0/1A17FC8, redo lsn=0/1A17F70
+2026-10-27 16:04:15.480 +05 [34144] ERROR:  permission denied for table profiles
+2026-10-27 16:04:15.480 +05 [34144] STATEMENT:  UPDATE profiles SET role='admin' WHERE id=$1
+2026-10-27 16:08:02.745 +05 [3988] LOG:  checkpoint starting: time
+2026-10-27 16:08:04.362 +05 [3988] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.557 s, sync=0.035 s, total=1.618 s; sync files=15, longest=0.015 s, average=0.003 s; distance=40 kB, estimate=3430 kB; lsn=0/1A222A8, redo lsn=0/1A22250
+2026-10-27 16:13:02.371 +05 [3988] LOG:  checkpoint starting: time
+2026-10-27 16:13:03.074 +05 [3988] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.662 s, sync=0.013 s, total=0.706 s; sync files=7, longest=0.004 s, average=0.002 s; distance=17 kB, estimate=3089 kB; lsn=0/1A268D0, redo lsn=0/1A26878
+2026-10-27 16:18:02.091 +05 [3988] LOG:  checkpoint starting: time
+2026-10-27 16:18:02.339 +05 [3988] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.220 s, sync=0.009 s, total=0.250 s; sync files=3, longest=0.004 s, average=0.003 s; distance=6 kB, estimate=2781 kB; lsn=0/1A282B0, redo lsn=0/1A28258
+2026-10-27 16:53:02.376 +05 [3988] LOG:  checkpoint starting: time
+2026-10-27 16:53:02.524 +05 [3988] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.115 s, sync=0.005 s, total=0.149 s; sync files=2, longest=0.004 s, average=0.003 s; distance=4 kB, estimate=2503 kB; lsn=0/1A295B8, redo lsn=0/1A29560
+2026-10-28 07:51:06.156 +05 [11648] ERROR:  permission denied for table profiles
+2026-10-28 07:51:06.156 +05 [11648] STATEMENT:  UPDATE profiles SET role='admin' WHERE id=$1
+2026-10-28 08:02:03.970 +05 [3988] LOG:  checkpoint starting: time
+2026-10-28 08:02:06.228 +05 [3988] LOG:  checkpoint complete: wrote 20 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.130 s, sync=0.045 s, total=2.264 s; sync files=18, longest=0.013 s, average=0.003 s; distance=61 kB, estimate=2259 kB; lsn=0/1A38B30, redo lsn=0/1A38AD8
+2026-10-28 08:07:03.272 +05 [3988] LOG:  checkpoint starting: time
+2026-10-28 08:07:03.417 +05 [3988] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.113 s, sync=0.005 s, total=0.148 s; sync files=2, longest=0.003 s, average=0.003 s; distance=5 kB, estimate=2033 kB; lsn=0/1A3A120, redo lsn=0/1A3A0C8
+2026-10-28 08:17:03.432 +05 [3988] LOG:  checkpoint starting: time
+2026-10-28 08:17:04.233 +05 [3988] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.767 s, sync=0.017 s, total=0.804 s; sync files=8, longest=0.004 s, average=0.003 s; distance=27 kB, estimate=1833 kB; lsn=0/1A40F28, redo lsn=0/1A40ED0
+2026-10-28 08:22:12.207 +05 [3988] LOG:  checkpoint starting: time
+2026-10-28 08:22:12.911 +05 [3988] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.663 s, sync=0.010 s, total=0.707 s; sync files=7, longest=0.003 s, average=0.002 s; distance=19 kB, estimate=1651 kB; lsn=0/1A45ED8, redo lsn=0/1A45E80
+2026-10-28 08:27:12.930 +05 [3988] LOG:  checkpoint starting: time
+2026-10-28 08:27:13.756 +05 [3988] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.777 s, sync=0.022 s, total=0.829 s; sync files=8, longest=0.011 s, average=0.003 s; distance=21 kB, estimate=1488 kB; lsn=0/1A4B458, redo lsn=0/1A4B400
+2026-10-28 08:45:08.891 +05 [3988] LOG:  checkpoint starting: time
+2026-10-28 08:45:09.739 +05 [3988] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.680 s, sync=0.117 s, total=0.851 s; sync files=7, longest=0.093 s, average=0.017 s; distance=23 kB, estimate=1342 kB; lsn=0/1A51168, redo lsn=0/1A51110
+2026-10-28 09:22:19.570 +05 [3988] LOG:  checkpoint starting: time
+2026-10-28 09:22:21.052 +05 [3988] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.392 s, sync=0.034 s, total=1.485 s; sync files=11, longest=0.010 s, average=0.004 s; distance=45 kB, estimate=1212 kB; lsn=0/1A5C920, redo lsn=0/1A5C8C8
+2026-10-28 09:27:19.079 +05 [3988] LOG:  checkpoint starting: time
+2026-10-28 09:27:20.824 +05 [3988] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.648 s, sync=0.066 s, total=1.751 s; sync files=15, longest=0.023 s, average=0.005 s; distance=35 kB, estimate=1094 kB; lsn=0/1A65868, redo lsn=0/1A657D8
+2026-10-28 09:37:19.868 +05 [3988] LOG:  checkpoint starting: time
+2026-10-28 09:37:20.125 +05 [3988] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.225 s, sync=0.005 s, total=0.259 s; sync files=3, longest=0.002 s, average=0.002 s; distance=1 kB, estimate=985 kB; lsn=0/1A65E78, redo lsn=0/1A65E20
